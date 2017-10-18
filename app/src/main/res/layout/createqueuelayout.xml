@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
-
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="vertical">
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:layout_marginLeft="10dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:text="ORGANISATION:"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="37dp"
+        android:textSize="16sp"
+        android:textColor="#000"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:gravity="center"
+        />
     <EditText
         android:id="@+id/org_name"
         android:layout_width="wrap_content"
@@ -9,12 +27,33 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
+        android:layout_marginEnd="10dp"
         android:layout_marginLeft="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginTop="37dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name of Org" />
+        android:cursorVisible="true"/>
+</LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="NAME OF QUEUE:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"
+            />
 
     <EditText
         android:id="@+id/queue_name"
@@ -24,10 +63,30 @@
         android:layout_alignStart="@+id/org_name"
         android:layout_below="@+id/org_name"
         android:layout_marginTop="19dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Name of Queue" />
-
+        android:cursorVisible="true"
+         />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="32dp"
+            android:text="DESCRIPTION:"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:gravity="center"/>
     <EditText
         android:id="@+id/description_queue"
         android:layout_width="wrap_content"
@@ -35,17 +94,27 @@
         android:layout_alignLeft="@+id/queue_name"
         android:layout_alignStart="@+id/queue_name"
         android:layout_below="@+id/queue_name"
+        android:layout_marginLeft="10dp"
         android:layout_marginTop="24dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Description Of Queue" />
+        android:cursorVisible="true"
+         />
+    </LinearLayout>
 
     <Button
         android:id="@+id/create_button"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_centerVertical="true"
-        android:text="Create Queue" />
-</RelativeLayout>
+        android:text="Create Queue"
+        android:elevation="30dp"
+        android:layout_marginTop="123dp"
+        android:layout_marginLeft="120dp"
+        android:textStyle="bold"
+
+
+        />
+</LinearLayout>

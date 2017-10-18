@@ -18,8 +18,10 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".CreateQueue" />
-        <activity android:name=".JoinQueue" />
+        <activity android:name=".CreateQueue" android:parentActivityName=".MainActivity"
+            android:label="Add Queue"/>
+        <activity android:name=".JoinQueue"
+            />
     </application>
 
 </manifest>
