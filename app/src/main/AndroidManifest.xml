@@ -20,7 +20,9 @@
         </activity>
         <activity android:name=".CreateQueue" android:parentActivityName=".MainActivity"
             android:label="Add Queue"/>
-        <activity android:name=".JoinQueue"
+
+        <activity android:name=".JoinQueue" android:parentActivityName=".MainActivity"
+
             />
     </application>
 

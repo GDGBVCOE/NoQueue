@@ -28,5 +28,3 @@ Create issues and if you want to work on an existing one please comment on the i
 
 ## Be Active 
 
-with love GDGBVP
-
