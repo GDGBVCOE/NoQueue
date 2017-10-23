@@ -35,9 +35,15 @@ import butterknife.ButterKnife;
 
 public class JoinQueue extends AppCompatActivity {
 
-    @BindView(R.id.textView1) TextView mTextView1;
-    @BindView(R.id.textView2) TextView mTextView2;
-    @BindView(R.id.enrollButton) Button enrollButton;
+    @BindView(R.id.textView1)
+    TextView mTextView1;
+
+    @BindView(R.id.textView2)
+    TextView mTextView2;
+
+    @BindView(R.id.enrollButton)
+    Button enrollButton;
+
     private DatabaseReference mdatabase;
     SharedPreferences msharedPrefs;
     @Override
@@ -94,7 +100,6 @@ public class JoinQueue extends AppCompatActivity {
             public void onCancelled(DatabaseError databaseError) {
             }
         });
-
 
         enrollButton.setOnClickListener(new View.OnClickListener() {
             @Override

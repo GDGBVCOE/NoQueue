@@ -23,17 +23,24 @@ import butterknife.ButterKnife;
 
 public class MainActivity extends AppCompatActivity {
 
-    private TextView mTextMessage;
-    private Button trial_createqueue;
+
+    @BindView(R.id.message)
+    TextView mTextMessage;
+
+    @BindView(R.id.create)
+    Button trial_createqueue;
+
+    @BindView(R.id.getToken)
+    Button getTokenButton;
+
     private DatabaseReference mDatabase;
-    @BindView(R.id.getToken) Button getTokenButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ButterKnife.bind(this);
-        mTextMessage =  findViewById(R.id.message);
-        trial_createqueue=findViewById(R.id.create);
+
         mDatabase=FirebaseDatabase.getInstance().getReference();
         trial_createqueue.setOnClickListener(new View.OnClickListener() {
             @Override
